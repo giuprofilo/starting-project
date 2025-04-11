@@ -10,8 +10,10 @@
   <ul>
     @for (task of selectedUserTasks; track task.id) {
     <li>
-      <app-task />
+      <app-task [task]="task" (complete)="onCompleteTask($event)" />
     </li>
+    <!-- a variavel especial $event da acesso ao event data que foi emitido no 
+    onCompleteTask em task.component.ts -->
     }
   </ul>
 </section>
