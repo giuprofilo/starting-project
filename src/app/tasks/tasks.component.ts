@@ -22,9 +22,6 @@ export class TasksComponent {
     return this.tasksService.getUserTasks(this.userId);
   }
 
-  //função p atualizar a lista de tasks e remover a que for completada
-  onCompleteTask(id: string) {}
-
   onStartAddTask() {
     this.isAddingTask = true;
   }
